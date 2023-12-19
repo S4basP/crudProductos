@@ -10,20 +10,19 @@ export const consultarDatos = async (req, res) => {
 
 };
 
-export const subirDatos = async( req, res )  =>
+export const subirDatos =  async ( req, res ) =>
 {
-    console.log(req.body);
-    const params = req.body;
-    res.send(params);
-    /*
-    const { nombre, unidades, precio_Por_Unidad } = req.body;
-    try
-    {   
-        const [ rows ]  = await conn.query('insert into productos ( nombre, unidades, precio_Por_Unidad ) value (?,?,?);', [ nombre, unidades, precio_Por_Unidad ]);
-        res.send({ rows });
-    }
-    catch
-    {
-        return res.status(500).json({ message: "Someting goes wrong"});
-    }*/
+  console.log(req.body)
+  res.send("New post");
+  // const {nombre, unidades, precio_Por_Unidad} = req.body;
+  // try
+  // {
+   
+  //   const [ rows ] = await conn.query("insert into productos ( nombre, unidades, precio_Por_Unidad ) value ( ?, ?, ? );", [ nombre, unidades, precio_Por_Unidad ]);
+  //   res.send( { rows } );
+  // }
+  // catch
+  // {
+  //   return res.status(500).json({ message: "someting goes wrong"});
+  // }
 };

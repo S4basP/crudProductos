@@ -5,7 +5,13 @@ const router = Router();
 
 router.get('/consultarDatos', consultarDatos);
 
-router.post('/subirDatos', subirDatos);
+router.post('/subirDatos', ( req, res ) =>
+{
+    const { nombre, unidades, precio_Por_Unidad } = req.body;
+    console.log(`Nombre ${nombre}, unidades: ${unidades}, precio: ${precio_Por_Unidad}`);
+    res.send("New Post");
+
+} );
 
 
 
