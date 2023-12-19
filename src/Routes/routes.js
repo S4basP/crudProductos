@@ -1,9 +1,11 @@
 import { Router } from "express";
-import { verDatos } from '../controllers/consultas.js';
+import { consultarDatos, subirDatos} from '../controllers/consultas.js';
 const router = Router();
 
 
-router.get('/impDatos', verDatos);
+router.get('/consultarDatos', consultarDatos);
+
+router.post('/subirDatos', subirDatos);
 
 
 
