@@ -1,5 +1,5 @@
 {
-  "type":"module",
+  "type": "module",
   "name": "proyecto",
   "version": "1.0.0",
   "description": "",
@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "cors": "^2.8.5",
     "mysql2": "^3.6.5"
   }
 }

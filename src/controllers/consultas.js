@@ -40,21 +40,7 @@ export const actualizarProducto = async (req, res) => {
   {
     res.status(505).json({message: "Somethin goes wrong"});
   }
-//   try {
-//     const result = await conn.query(
-//       "update productos set nombre = ifnull( ?, nombre ), unidades = ifnull( ?, unidades ) precio_Por_Unidad = ifnull ( ?, precio_Por_Unidad )  where id = ?; ",
-//       [nombre, unidades, precio_Por_Unidad, id]
-//     );
 
-//     if (result.affectedRows === 0)
-//       return res.status(404).json({
-//         message: "Product not update ",
-//       });
-//   } catch {
-//     res.status(505).json({
-//       message: "Somethin goes wrong"
-//     });
-//   }
 };
 
 export const eliminarProducto = async (req, res) => {
